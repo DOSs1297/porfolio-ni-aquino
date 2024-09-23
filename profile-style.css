@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #006400   ; /* or use a hex code like #87CEEB */
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 10px; 
+}
+
+nav a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px; 
+    color: white;
+}
+
+nav a:hover {
+    background-color: greenyellow;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 100px;
+    color: #1C1C1C; /* Dark black (near black) */
+    font-weight: bold; /* Make text bold */
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; 
+    font-weight: bold ;
+}
+
+
+.info {
+    flex: 1; 
+}
+
+.image-container {
+    flex: 1; 
+    margin-top: 70px;
+}
+
+img {
+    width: 100%; 
+    animation: slideInFromLeft 1s ease-out;
+}
+main {
+    background-image: url('allbg.jpeg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.info dl {
+    font-size:20px; 
+}
+
+.info dt {
+    font-weight: bold; 
+    margin-top: 10px;
+    color: black;
+}
+
+.info dd {
+    margin-left: 0; 
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.info dd i {
+
+    color: black;
+    font-weight: bold;
+}
+label.logo{
+    color: #7cfc00  ;
+    font-size: 40px;
+}
+.info dd a{
+    color: black;
+    font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+}
